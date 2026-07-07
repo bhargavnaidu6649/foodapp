@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F4F1E8;
+  color: #1C2A22;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Fraunces', serif;
+}
+
+::selection {
+  background-color: #E8A33D;
+  color: #1C2A22;
+}
+
+/* Toggle pill buttons */
+.pill-btn {
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.pill-btn:active {
+  transform: scale(0.97);
+}
+
+.grain {
+  background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.035) 1px, transparent 0);
+  background-size: 14px 14px;
+}
+
+:focus-visible {
+  outline: 2px solid #D9891C;
+  outline-offset: 2px;
+}
